@@ -175,12 +175,25 @@ public class HolsDerGeier {
     /**
      * Hier kann ein vollstaendiges Spiel durchgefuehrt werden!
     */            
-    public void ganzesSpiel() throws Exception {
-       if (nochZuVergebendeGeierKarten.isEmpty())
+    public String ganzesSpiel() throws Exception {
+    	if (nochZuVergebendeGeierKarten.isEmpty())
             naechstesSpiel();
         while (!nochZuVergebendeGeierKarten.isEmpty()) {
             naechsterZug();
         }
+        
+        if (punktstaende[0] > punktstaende[1]) {
+            return spieler[0].getClass().getSimpleName();
+
+        }
+        else if (punktstaende[0] < punktstaende[1]){
+            return spieler[1].getClass().getSimpleName();
+        }
+        else {
+            return null;
+        }
+
+
     }
     
 }
