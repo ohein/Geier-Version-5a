@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+
+
 /**
  * Beschreiben Sie hier die Klasse HolsDerGeier.
  * 
