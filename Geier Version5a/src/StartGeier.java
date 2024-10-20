@@ -7,7 +7,9 @@ public class StartGeier {
 		int e1=0;
 		int e2=0;
 		HolsDerGeierSpieler s1 = new AlexBotV3();
-		HolsDerGeierSpieler s2 = new Random();
+		HolsDerGeierSpieler s2 = new GeiervonKlaraSchramm();
+//		HolsDerGeierSpieler s2 = new Random();
+//		HolsDerGeierSpieler s2 = new Random();
 		hdg.neueSpieler(s1,s2);
 		try{
 			for(int i = 0; i < games; i++) {
